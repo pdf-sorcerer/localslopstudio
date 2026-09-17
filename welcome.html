@@ -10,134 +10,96 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
-
-<section class="section">
-  <p class="eyebrow">LocalSlop.Studio and iterative product development intent</p>
-  <h2>foo</h2>
-  <p class="section-copy">Original intent was to use local LLMs to draft a tailored resume for each job app. Results? Becoming content with a single, good resume, and a harder pivot into conventional automation.</p>
-  <div class="callout">
-    <div class="callout-title"></div>
-    <p>Automation can accelerate research and assembly. It cannot invent experience. Every generated claim must remain traceable to a canonical career fact.</p>
-  </div>
-</section>
 <body data-page="overview">
   <nav id="shared-nav" aria-label="LocalSlop Studio pages"></nav>
-  <main>
-    <p class="eyebrow">Product systems · data pipelines · applied AI</p>
-    <p class="lead"><strong>Original intent:</strong> Create bespoke résumé bullet points, tuned to the job's keywords and requirements.</p>
-    <p class="lead lead-follow"><strong>Learnings:</strong> local LLM rewriting is compute-expensive and wasteful. Ultimately, I went a different direction.</p>
-    <p class="lead lead-follow"><strong>Current direction:</strong> Automate manual data entry. Track resume interaction.</p>
 
-<br><br>
+  <main>
+    <header class="hero">
+      <p class="eyebrow">Product systems · data pipelines · applied AI</p>
+      <h1>A job-search operating system for the candidate side.</h1>
+      <p class="lead"><strong>Original intent:</strong> Generate bespoke résumé bullets aligned with each role’s requirements.</p>
+      <p class="lead lead-follow"><strong>What I learned:</strong> Local-LLM rewriting was compute-heavy, slow, and less useful than expected.</p>
+      <p class="lead lead-follow"><strong>Current direction:</strong> Eliminate repetitive data entry, preserve source truth, and track what happens after an application is submitted.</p>
+    </header>
 
     <section class="demo-section" aria-labelledby="demo-heading">
       <div class="section-heading-row">
         <div>
           <p class="eyebrow">Product flow</p>
-          <h2 id="demo-heading">Product flow</h2>
+          <h2 id="demo-heading">From missing company to recurring feed</h2>
         </div>
-        <p class="demo-note">If a company isn't found in search, you can add it</p>
+        <p class="demo-note">Can’t find a company? Add its public job board once; LocalSlop will include it in future refreshes.</p>
       </div>
 
       <article class="featured-demo">
-        <video controls playsinline preload="metadata" src="demo.mp4#t=0.1" aria-label="user flow"></video>
+        <video controls playsinline preload="metadata" src="demo.mp4#t=0.1" aria-label="Adding a company to LocalSlop Studio"></video>
         <div class="demo-caption">
-  
-          <p>How to add a company to the register. Now it will be queried automatically in the future.</p>
+          <p>Add a company to the registry once. Its public roles are then queried automatically in future feed refreshes.</p>
         </div>
       </article>
 
-  <div class="demo-grid" aria-label="Additional LocalSlop Studio examples">
-  <article class="demo-card">
-    <video
-      controls
-      playsinline
-      preload="metadata"
-      src="Onboarding [eI9Od6SAAdo].mp4#t=0.1"
-      aria-label="LocalSlop Studio onboarding">
-    </video>
-    <div class="demo-caption">
-      <div>
-        <span class="demo-index">AI Agent 01</span>
-        <h3>Onboarding</h3>
-      </div>
-      <p>Onboarding to LocalSlop Studio with AI agent ama_Car.</p>
-    </div>
-  </article>
+      <div class="demo-grid" aria-label="Additional LocalSlop Studio examples">
+        <article class="demo-card">
+          <video controls playsinline preload="metadata" src="Onboarding [eI9Od6SAAdo].mp4#t=0.1" aria-label="LocalSlop Studio onboarding"></video>
+          <div class="demo-caption">
+            <div>
+              <span class="demo-index">AI Agent 01</span>
+              <h3>Onboarding</h3>
+            </div>
+            <p>LocalSlop Studio onboarding with the ama_Car agent.</p>
+          </div>
+        </article>
 
-  <article class="demo-card">
-    <video
-      controls
-      playsinline
-      preload="metadata"
-      src="Boeing [8uzkcumL0n8].mp4#t=0.1"
-      aria-label="Boeing heritage mode example">
-    </video>
-    <div class="demo-caption">
-      <div>
-        <span class="demo-index">AI Agent 02</span>
-        <h3>Boeing</h3>
-      </div>
-      <p>Agentic AI danger in aviation, with the Boeing 737 MAX and MCAS as the product context.</p>
-    </div>
-  </article>
-    
+        <article class="demo-card">
+          <video controls playsinline preload="metadata" src="Boeing [8uzkcumL0n8].mp4#t=0.1" aria-label="Boeing heritage mode example"></video>
+          <div class="demo-caption">
+            <div>
+              <span class="demo-index">AI Agent 02</span>
+              <h3>Boeing</h3>
+            </div>
+            <p>Agentic-AI risk in aviation, using the Boeing 737 MAX and MCAS as product context.</p>
+          </div>
+        </article>
 
-  <article class="demo-card">
-    <video
-      controls
-      playsinline
-      preload="metadata"
-      src="airwallex [HFTYNNGuKe0].mp4#t=0.1"
-      aria-label="Airwallex agent example">
-    </video>
-    <div class="demo-caption">
-      <div>
-        <span class="demo-index">AI Agent 03</span>
-        <h3>Airwallex</h3>
-      </div>
-      <p>A real application surfaced while researching bot detection and anti-automation patterns.</p>
-    </div>
-  </article>
-</div>
+        <article class="demo-card">
+          <video controls playsinline preload="metadata" src="airwallex [HFTYNNGuKe0].mp4#t=0.1" aria-label="Airwallex agent example"></video>
+          <div class="demo-caption">
+            <div>
+              <span class="demo-index">AI Agent 03</span>
+              <h3>Airwallex</h3>
+            </div>
+            <p>A live role surfaced while researching bot detection and anti-automation patterns.</p>
+          </div>
+        </article>
 
-
-  <article class="demo-card">
-    <video
-      controls
-      playsinline
-      preload="metadata"
-      src="assemblyai [N8BdkbdaqDI].mp4#t=0.1"
-      aria-label="AssemblyAI agent example">
-    </video>
-    <div class="demo-caption">
-      <div>
-        <span class="demo-index">AI Agent 03</span>
-        <h3>AssemblyAI</h3>
+        <article class="demo-card">
+          <video controls playsinline preload="metadata" src="assemblyai [N8BdkbdaqDI].mp4#t=0.1" aria-label="AssemblyAI agent example"></video>
+          <div class="demo-caption">
+            <div>
+              <span class="demo-index">AI Agent 04</span>
+              <h3>AssemblyAI</h3>
+            </div>
+            <p>Another live role surfaced during research into bot detection and anti-automation patterns.</p>
+          </div>
+        </article>
       </div>
-      <p>Another application surfaced while looking for bot detection and anti-automation patterns.</p>
-    </div>
-  </article>
-</div>
+    </section>
 
     <div class="stats" aria-label="Project metrics">
       <div class="stat"><span class="stat-value">3</span><span class="stat-label">ATS ecosystems normalized</span></div>
-      <div class="stat"><span class="stat-value">1–2m</span><span class="stat-label">Tailored résumé generation</span></div>
+      <div class="stat"><span class="stat-value">1–2 min</span><span class="stat-label">Tailored résumé generation</span></div>
       <div class="stat"><span class="stat-value">316</span><span class="stat-label">Terms in the skills lexicon</span></div>
     </div>
 
     <section class="section">
       <p class="eyebrow">The premise</p>
       <h2>The candidate needs operational leverage, too.</h2>
-      <p class="section-copy">Hiring software gives employers structured data, filters, automation, and analytics. Candidates usually get browser tabs and a spreadsheet. LocalSlop applies product infrastructure to the other side of the funnel: aggregate the market, preserve source truth, reduce repeated work, and make outcomes legible.</p>
+      <p class="section-copy">Hiring software gives employers structured data, filters, automation, and analytics. Candidates usually get browser tabs and a spreadsheet. LocalSlop brings product infrastructure to the other side of the funnel: aggregate the market, preserve source truth, reduce repeated work, and make outcomes legible.</p>
       <div class="callout">
         <div class="callout-title">Design constraint</div>
         <p>Automation can accelerate research and assembly. It cannot invent experience. Every generated claim must remain traceable to a canonical career fact.</p>
       </div>
     </section>
-
-      
 
     <section class="section">
       <p class="eyebrow">System shape</p>
@@ -152,13 +114,16 @@
     </section>
 
     <div class="page-links" aria-label="Explore the case study">
-      <a class="page-link" href="integrations.html"><span>01</span><strong>Dashboard →</strong><p>How fragmented systems become one data model.</p></a>
- 
-
-
+      <a class="page-link" href="integrations.html">
+        <span>01</span>
+        <strong>Dashboard →</strong>
+        <p>How fragmented systems become one data model.</p>
+      </a>
     </div>
+
     <footer class="footer">Mason Thompson · Berkeley, California</footer>
   </main>
+
   <script src="nav.js"></script>
 </body>
 </html>

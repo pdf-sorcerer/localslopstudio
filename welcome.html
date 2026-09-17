@@ -1,1 +1,97 @@
-<p>hello,world</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="LocalSlop Studio: a job-search operating system built by Mason Thompson.">
+  <title>LocalSlop Studio | Mason Thompson</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="overview">
+  <nav id="shared-nav" aria-label="LocalSlop Studio pages"></nav>
+  <main>
+    <p class="eyebrow">Product systems · data pipelines · applied AI</p>
+    <p class="lead"><strong>Original intent:</strong> Create bespoke résumé bullet points, tuned to the job's keywords and requirements.</p>
+    <p class="lead lead-follow"><strong>Learnings:</strong> local LLM rewriting is compute-expensive and wasteful. Ultimately, I went a different direction.</p>
+    <p class="lead lead-follow"><strong>Current direction:</strong> Automate manual data entry. Track resume interaction.</p>
+
+<br><br>
+
+    <section class="demo-section" aria-labelledby="demo-heading">
+      <div class="section-heading-row">
+        <div>
+          <p class="eyebrow">Product flow</p>
+          <h2 id="demo-heading">Product flow</h2>
+        </div>
+        <p class="demo-note">If a company isn’t listed, paste one of its job links to add it.</p>
+      </div>
+
+      <article class="featured-demo">
+        <video controls playsinline preload="metadata" src="media/jensen_onboarding.mp4#t=0.1" aria-label="ama_Car onboarding Mason to LocalSlop Studio"></video>
+        <div class="demo-caption">
+          <div><span class="demo-index">Main demo</span><h3>ama_Car onboards Mason</h3></div>
+          <p>A guided introduction to LocalSlop Studio and its application workflow.</p>
+        </div>
+      </article>
+
+      <div class="demo-grid" aria-label="Additional LocalSlop Studio examples">
+        <article class="demo-card">
+          <video controls playsinline preload="metadata" src="media/boeing-heritage-mode.mp4#t=0.1" aria-label="Boeing heritage mode example"></video>
+          <div class="demo-caption">
+            <div><span class="demo-index">Example 01</span><h3>Boeing</h3></div>
+            <p>Agentic AI danger in aviation, with the 737 MAX and MCAS as the product context.</p>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <video controls playsinline preload="metadata" src="media/airwallex-agent.mp4#t=0.1" aria-label="Airwallex agent example"></video>
+          <div class="demo-caption">
+            <div><span class="demo-index">Example 02</span><h3>Airwallex</h3></div>
+            <p>A real application surfaced while researching bot-detection and anti-automation patterns.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="stats" aria-label="Project metrics">
+      <div class="stat"><span class="stat-value">3</span><span class="stat-label">ATS ecosystems normalized</span></div>
+      <div class="stat"><span class="stat-value">1–2m</span><span class="stat-label">Tailored résumé generation</span></div>
+      <div class="stat"><span class="stat-value">316</span><span class="stat-label">Terms in the skills lexicon</span></div>
+    </div>
+
+    <section class="section">
+      <p class="eyebrow">The premise</p>
+      <h2>The candidate needs operational leverage, too.</h2>
+      <p class="section-copy">Hiring software gives employers structured data, filters, automation, and analytics. Candidates usually get browser tabs and a spreadsheet. LocalSlop applies product infrastructure to the other side of the funnel: aggregate the market, preserve source truth, reduce repeated work, and make outcomes legible.</p>
+      <div class="callout">
+        <div class="callout-title">Design constraint</div>
+        <p>Automation can accelerate research and assembly. It cannot invent experience. Every generated claim must remain traceable to a canonical career fact.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">System shape</p>
+      <h2>One loop from discovery to outcome.</h2>
+      <div class="pipeline" aria-label="LocalSlop system pipeline">
+        <div class="pipeline-row"><span class="pipeline-stage">INGEST</span><span class="pipeline-arrow">→</span><span class="pipeline-desc">Greenhouse · Lever · Ashby job feeds</span></div>
+        <div class="pipeline-row"><span class="pipeline-stage">NORMALIZE</span><span class="pipeline-arrow">→</span><span class="pipeline-desc">Canonical roles, companies, locations, dates, descriptions</span></div>
+        <div class="pipeline-row"><span class="pipeline-stage">DECIDE</span><span class="pipeline-arrow">→</span><span class="pipeline-desc">Search, filters, review state, selected opportunities</span></div>
+        <div class="pipeline-row"><span class="pipeline-stage">TAILOR</span><span class="pipeline-arrow">→</span><span class="pipeline-desc">Requirement mapping and grounded résumé generation</span></div>
+        <div class="pipeline-row"><span class="pipeline-stage">OBSERVE</span><span class="pipeline-arrow">→</span><span class="pipeline-desc">Application events, document opens, Gmail outcome signals</span></div>
+      </div>
+    </section>
+
+    <div class="page-links" aria-label="Explore the case study">
+      <a class="page-link" href="integrations.html"><span>01</span><strong>Dashboard →</strong><p>How fragmented systems become one data model.</p></a>
+ 
+
+
+    </div>
+    <footer class="footer">Mason Thompson · Berkeley, California</footer>
+  </main>
+  <script src="nav.js"></script>
+</body>
+</html>
